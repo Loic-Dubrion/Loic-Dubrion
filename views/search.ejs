@@ -1,0 +1,23 @@
+<%- include('./partials/header')%>
+
+<article class="post pure-u-1">
+    <header>
+      <h1>Listes des articles correspondant à votre recherche : "<%= query %>"</h1>
+    </header>
+
+<div class="post-content">
+    <ul>
+        <% for (article of results) { %>
+            <li>
+                <a href="/article/<%= article.title %>"><%= article.title %></a> 
+            </li>
+        <% } %>
+    </ul>
+        
+</div>
+    <footer>
+        <a class="pure-button" href="/">Retour à l'accueil</a>
+    </footer>
+</article>
+
+<%- include('./partials/footer')%>

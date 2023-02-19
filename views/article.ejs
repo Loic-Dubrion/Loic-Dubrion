@@ -1,0 +1,28 @@
+<%- include('partials/header')%>
+
+  <article class="post pure-u-1">
+
+    <header>
+      <h1><%= article.title%></h1>
+        <div class="post-meta">
+        Par <a href="<%= article.author %>">Ben O'clock</a> 
+        dans la catégorie <a href="/category/<%=article.category%>"><%= article.category %></a>
+        </div>
+    </header>
+
+    <figure class="post-picture">
+      <img class="pure-img" src="/images/<%= article.img %>" alt="<%= article.img_alt %>">
+        <figcaption class="post-picture-caption"><%= article.sub_title %></figcaption>
+    </figure>
+
+    <div class="post-content">
+      <p><%= article.text %></p>
+    </div>
+
+    <footer>
+      <a class="pure-button" href="/">Retour à l'accueil</a>
+    </footer>
+    
+  </article>
+
+<%- include('./partials/footer')%>

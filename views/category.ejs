@@ -1,0 +1,28 @@
+<%- include('./partials/header')%>
+
+<article class="post pure-u-1">
+  <header>
+    <h1>Listes des articles <%= category.category %></h1>
+  </header>
+<div class="post-content">
+  <ul>
+
+    <!-- Boucle pour lister les articles de la catégorie demandé -->
+    <% for (article of articles) { %>
+      <% if (article.category === category.category) { %>
+
+        <li class="pure-u-1-2 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-2">
+          <a href="/article/<%= article.title %>"><%= article.title %></a>
+        </li>
+        
+      <% } %>
+    <% } %>
+
+     </ul>
+    </div>
+    <footer>
+      <a class="pure-button" href="/">Retour à l'accueil</a>
+    </footer>
+  </article>
+
+<%- include('./partials/footer')%>
