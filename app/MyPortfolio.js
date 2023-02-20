@@ -23,7 +23,7 @@ const port = 1664;
 app.set('view engine', 'ejs');
 
 // Configuration des views
-app.set('views', './views');
+app.set('views', __dirname + '/views');
 
 // Gestion des fichiers statics
 app.use(express.static('public'));
@@ -47,4 +47,4 @@ app.use(errorHandler);
 * Activation du serveur
 *==============================*/
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`app listening on port ${port}!`));

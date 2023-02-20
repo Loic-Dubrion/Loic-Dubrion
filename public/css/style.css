@@ -20,6 +20,7 @@ a {
 
 a:hover, a:focus {
   color: #70685F;
+  border-radius: 2px;
 }
 
 .banner {
@@ -115,11 +116,13 @@ a:hover, a:focus {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .pure-button:hover {
   background-color: #99112A;
   color: white;
+  border-radius: 2px;
 }
 
 @media screen and (min-width: 48em) {

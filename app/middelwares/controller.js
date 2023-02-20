@@ -3,7 +3,7 @@
 *==================================*/
 
 // Récupération des données
-const articles = require('../data/articles.json');
+const articles = require('../../data/articles.json');
 
 // Création de mon objet controller
 const controller = 

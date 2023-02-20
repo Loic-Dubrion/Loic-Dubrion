@@ -4,7 +4,7 @@
 
 // Importer les modules nécessaires
 const bodyParser = require('body-parser');
-const articles = require('../data/articles.json');
+const articles = require('../../data/articles.json');
 
 // Définir une route pour la recherche POST
 module.exports = (req, res) => {
